@@ -1,0 +1,12 @@
+MOV AX, 1H
+MOV BX, 0H
+fib:
+ADD AX, BX
+MOV CX, AX
+MOV AX, BX
+MOV BX, CX
+JNO fib
+MOV AX, 1H
+MOV BX, 0H
+MOV CX, 0H
+JMP fib
